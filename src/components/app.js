@@ -22,6 +22,16 @@ class App extends Component {
         })
     }
 
+    deleteItem = (index) => {
+        const listCopy = this.state.list.slice();
+
+        listCopy.splice(index, 1);
+
+        this.setState({
+            list: listCopy
+        });
+    }
+
     componentDidMount(){
         this.getListData();
     }
@@ -38,7 +48,7 @@ class App extends Component {
                 <h1 className="center title">To<span className='title-orange'>-Do</span> List</h1>
 
                 <AddItem add={this.addItem} />
-                <List data={this.state.list} />
+                <List delete={this.deleteItem} data={this.state.list} />
             </div>
         );
     }

@@ -44,7 +44,7 @@ class AddItem extends Component {
                     </div>
                     <div className="row">
                         <div className="col s8 offset-s2 right-align">
-                            <button className="btn ">Add to List</button>
+                            <button className="btn waves-effect waves-light">Add to List</button>
                         </div>
                     </div>
                 </form>
