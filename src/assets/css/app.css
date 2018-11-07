@@ -1,43 +1,23 @@
-@font-face {
-    font-family: quest;
-    src: url(../fonts/quest.ttf);
+input[type=text]:not(.browser-default):focus:not([readonly]){
+    border-bottom: 1px solid #f6970a;
+    -webkit-box-shadow: 0 1px 0 0 #f6970a;
+    box-shadow: 0 1px 0 0 #f6970a;
 }
-
-body {
-    margin: 0;
+input[type=text]:not(.browser-default):focus:not([readonly])+label{
+    color: #f6970a;
 }
-
-.app {
-    background-color: #000;
-    color: #FFF;
-    font-family: quest;
-    font-size: 30px;
-    padding: 50px;
-    text-align: center;
+.title {
+    font-family: 'Shadows Into Light', cursive;
 }
-
-.app .logo {
-    height: 220px;
-    filter: drop-shadow(2px 2px 0px #FFF);
+.title-orange {
+    color: #f6970a;
 }
-
-.app h1 {
-    color: #61DAFB;
-    font-size: 5em;
-    letter-spacing: 5px;
-    margin: 0.16em;
-    text-shadow: 2px 2px 0 #FFF;
+.btn {
+    background-color: #f6970a;
 }
-
-.rotate {
-    animation: spin 10s linear infinite;
+.btn:hover {
+    background-color: #be780e;
 }
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.btn:focus {
+    background-color: #be780e;
 }
