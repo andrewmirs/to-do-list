@@ -16,8 +16,8 @@ input[type=text]:not(.browser-default):focus:not([readonly])+label{
     background-color: #f6970a;
 }
 .btn:hover {
-    background-color: #be780e;
+    background-color: #d1881a;
 }
 .btn:focus {
-    background-color: #be780e;
+    background-color: #d1881a;
 }
